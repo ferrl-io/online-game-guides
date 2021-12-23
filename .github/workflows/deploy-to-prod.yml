@@ -1,9 +1,8 @@
-name: cd
+name: deploy-to-prod
 
 on:
   push:
-    branches:
-    - main
+    branches: [main]
 
 jobs:
   cd:
@@ -12,7 +11,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [17]
 
     steps:
       - name: Checkout
