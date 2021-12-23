@@ -5,13 +5,13 @@ on:
     branches-ignore: [main]
 
 jobs:
-  ci:
+  lint:
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [17]
+        node: [16]
 
     steps:
       - name: Checkout 🛎

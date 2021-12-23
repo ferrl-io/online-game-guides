@@ -5,13 +5,13 @@ on:
     branches: [main]
 
 jobs:
-  cd:
+  deploy-to-prod:
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [17]
+        node: [16]
 
     steps:
       - name: Checkout
