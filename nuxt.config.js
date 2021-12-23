@@ -5,6 +5,11 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  // Router: https://nuxtjs.org/deployments/github-pages/
+  router: {
+    base: '/online-game-guides/'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'online-game-guides',
