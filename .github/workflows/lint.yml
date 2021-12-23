@@ -1,6 +1,8 @@
 name: lint
 
-on: [pull-request]
+on:
+  push:
+    branches-ignore: [main]
 
 jobs:
   ci:
